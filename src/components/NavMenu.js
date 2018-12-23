@@ -31,7 +31,7 @@ class NavMenu extends Component {
           <Link to="/">
             <div className='buttonpad'>
                 <div className='logotext'>
-                  <Image size='medium' src={require('../images/logowhite.png')} />
+                  <Image size='large' src={require('../images/logowhite.png')} />
                 </div>
             </div>
           </Link>
@@ -65,6 +65,44 @@ class NavMenu extends Component {
     )} else {
       return(
         <div>
+          <div className='mobilemenu'>
+            <div className='mobilemenu1'>
+            <Button size='big' icon onClick={this.toggleVisibility}><Icon name='content' size='large' /></Button>
+            <Link to='/'>
+              <Image size='medium' src={require('../images/logowhite.png')} />
+            </Link>
+            </div>
+            <br />
+          </div>
+          <br />
+            <Sidebar as={Menu} animation='overlay' visible={visible} direction='top' vertical inverted>
+              <Button secondary onClick={this.toggleVisibility}><Icon name='remove' size='large' /></Button>
+            <Link to="/">
+              <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleClick}>
+                HOME
+              </Menu.Item>
+            </Link>
+            <Link to="/HowToPlay">
+              <Menu.Item name='stylists' active={activeItem === 'stylists'} onClick={this.handleClick}>
+                HOW TO PLAY
+              </Menu.Item>
+            </Link>
+              <Link to='/CrowdFunding'>
+                <Menu.Item name='services' active={activeItem === 'services'} onClick={this.handleClick}>
+                  CROWD FUNDING
+                </Menu.Item>
+              </Link>
+              <Link to='/MeetTheTeam'>
+                <Menu.Item name='services' active={activeItem === 'services'} onClick={this.handleClick}>
+                  MEET THE TEAM
+                </Menu.Item>
+              </Link>
+              <Link to='ContactUs'>
+                <Menu.Item name='contact' active={activeItem === 'contact'} onClick={this.handleClick}>
+                  CONTACT US
+                </Menu.Item>
+              </Link>
+          </Sidebar>
 
         </div>
       )

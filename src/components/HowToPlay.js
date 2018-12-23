@@ -1,5 +1,6 @@
 import React from 'react';
 import NavMenu from './NavMenu';
+import { Header, Menu, Image, Button, Icon, Sidebar, Divider } from 'semantic-ui-react';
 import '../HowToPlay.css';
 
 class HowToPlay extends React.Component {
@@ -20,7 +21,8 @@ class HowToPlay extends React.Component {
               Two faults in a row awards the other player a point and the server must still serve.
               Two more faults in a row and another point is awarded to the opposing player etc.
             </li><br />
-            <li>The receiver may stand where they wish outside their players box upon receipt of the serve. </li><br />
+            <li>The receiver may stand where they wish outside their players box upon receipt of the serve. </li>
+            <Image centered size='big' src={require('../images/pickleball.png')} />
             <li>Once a serve has been made the amount of shots between the players can be unlimited.
               A point is won by hitting the ball so the server fails to return it successfully.
               When the player opposite the server fails to successfully return the ball no point is awarded the server.
@@ -44,7 +46,8 @@ class HowToPlay extends React.Component {
                 Two faults in a row awards the other player a point and the server must still serve.
                 Two more faults in a row and another point is awarded to the opposing player etc.
               </li><br />
-              <li>The receiver may stand where they wish inside their players box upon receipt of the serve.</li><br />
+              <li>The receiver may stand where they wish inside their players box upon receipt of the serve.</li>
+              <Image centered size='big' src={require('../images/racquetball.png')} />
               <li>Once a serve has been made the amount of shots between the players can be unlimited.
                 A point is won by hitting the ball so the server fails to return it successfully.
                 When the player opposite the server fails to successfully return the ball no point is awarded the server.

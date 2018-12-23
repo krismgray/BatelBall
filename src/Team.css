@@ -10,4 +10,34 @@
 }
 
 .bio {
+  height: 250px;
+  width: 250px;
+  background-image: url('./images/Richard.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio2 {
+  height: 250px;
+  width: 250px;
+  background-image: url('./images/Loel.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio4 {
+  height: 250px;
+  width: 250px;
+  background-image: url('./images/Kris.jpeg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
