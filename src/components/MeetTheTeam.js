@@ -21,7 +21,7 @@ class MeetTheTeam extends React.Component {
 
   render() {
     const { activeItem, width, visible } = this.state;
-    const isMobile = width <= 500;
+    const isMobile = width <= 600;
     if (!isMobile ){
     return(
       <div>
@@ -99,6 +99,7 @@ class MeetTheTeam extends React.Component {
                 </div>
                 <h3>Richard Lossing</h3>
                 <p>President/Founder/Artist/Creative Powerhouse</p>
+                <br />
               </Col>
               <Col xs={16} md={6}>
                 <div className='bio2'>
@@ -106,17 +107,15 @@ class MeetTheTeam extends React.Component {
                 <h3>Loel Green</h3>
                 <p>San Luis Obispo, CA</p>
                 <p>CEO/CO-Founder/Game Engineer/Artist</p>
+                <br />
               </Col>
-            </Row>
-            <Row>
               <Col xs={16} md={6}>
                 <div className='bio3'>
                 </div>
                 <h3>Daniel Green</h3>
                 <p>Product Design Engineer/Materials Consultant</p>
+                <br />
               </Col>
-              <br />
-              <br />
               <Col xs={16} md={6}>
                 <div className='bio4'>
                 </div>

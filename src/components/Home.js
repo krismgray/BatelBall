@@ -2,6 +2,8 @@ import React from 'react';
 import NavMenu from './NavMenu';
 import { Header, Menu, Image, Button, Icon, Sidebar, Divider } from 'semantic-ui-react';
 import {Grid, Row, Col} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 
 class Home extends React.Component {
@@ -22,14 +24,14 @@ class Home extends React.Component {
 
   render() {
     const { activeItem, width, visible } = this.state;
-    const isMobile = width <= 500;
+    const isMobile = width <= 600;
     if (!isMobile ){
     return (
       <div>
         <NavMenu />
         <br />
         <div className='Body1'>
-          <Image fluid src={require('../images/position.jpg')} />
+          <Image fluid src={require('../images/Header.jpg')} />
         </div>
         <br />
         <p className='Body2'>Batell Ball is the new innovation in paddle sports created here in San Luis Obispo!
@@ -47,21 +49,23 @@ class Home extends React.Component {
         </div>
         <br />
         <div className='Body3'>
-          <Button fluid color='black' size='huge'>LEARN TO PLAY</Button>
-          <div style={{'padding-left' : '30px', 'padding-right' : '30px'}}>
-            <Image size='small' src={require('../images/paddles.png')} />
+          <div className='Body3back'>
+            <Link to='/HowToPlay'>
+              <button className='Body3button'>LEARN TO PLAY</button>
+            </Link>
           </div>
-          <Button fluid color='black' size='huge'>PURCHASE</Button>
+          <div style={{'padding-left' : '30px', 'padding-right' : '30px'}}>
+            <Image size='tiny' src={require('../images/paddles.png')} />
+          </div>
+          <div className='Body3back'>
+            <a href='https://secure.squarespace.com/checkout?cartId=tSIx-ASiKxebeGTy95ccoUBQqnbUf8dVzNqhuvpF'>
+              <button className='Body3button'>PURCHASE</button>
+            </a>
+          </div>
         </div>
         <br />
         <br />
         <div className='Body4'>
-          <div className='picStyle'>
-            <Image size='medium' src={require('../images/pic.jpg')} />
-          </div>
-          <div className='picStyle'>
-            <Image size='medium' src={require('../images/pic.jpg')} />
-          </div>
           <div className='picStyle'>
             <Image size='medium' src={require('../images/pic.jpg')} />
           </div>
@@ -80,13 +84,15 @@ class Home extends React.Component {
         <div className='Body6'>
           <div className='picStyle'>
             <h1>RALLY PACK</h1>
-            <Image size='large' src={require('../images/Pack.png')} />
+            <Image size='medium' src={require('../images/product2.jpg')} />
           </div>
           <div className='picStyle'>
             <h1>MERCH</h1>
-            <Image size='large' src={require('../images/Merch.png')} />
+            <Image size='medium' src={require('../images/product3.jpg')} />
           </div>
         </div>
+        <br />
+        <br />
       </div>
     )}
     else {
@@ -94,7 +100,7 @@ class Home extends React.Component {
         <div>
           <NavMenu />
           <div className='Body1'>
-            <Image fluid src={require('../images/position.jpg')} />
+            <Image fluid src={require('../images/Header.jpg')} />
           </div>
           <br />
           <p className='MobileBody2'>Batell Ball is the new innovation in paddle sports created here in San Luis Obispo!
@@ -115,13 +121,17 @@ class Home extends React.Component {
             <Grid>
               <Row>
                 <Col xs='12'>
-                  <Button fluid color='black' size='large'>LEARN TO PLAY</Button>
+                  <Link to='/HowToPlay'>
+                    <Button fluid color='black' size='large'>LEARN TO PLAY</Button>
+                  </Link>
                 </Col>
               </Row>
               <br />
               <Row>
                 <Col xs='12'>
-                  <Button fluid color='black' size='large'>PURCHASE</Button>
+                  <a href='https://secure.squarespace.com/checkout?cartId=tSIx-ASiKxebeGTy95ccoUBQqnbUf8dVzNqhuvpF'>
+                    <Button fluid color='black' size='large'>PURCHASE</Button>
+                  </a>
                 </Col>
               </Row>
             </Grid>
@@ -144,16 +154,16 @@ class Home extends React.Component {
           </div>
           <br />
           <br />
-          <div className='Body6'>
-            <div className='picStyle'>
-              <h1>RALLY PACK</h1>
-              <Image size='large' src={require('../images/Pack.png')} />
+            <div className='Body6'>
+              <div className='picStyle'>
+                <h1>RALLY PACK</h1>
+                <Image size='medium' src={require('../images/product2.jpg')} />
+              </div>
+              <div className='picStyle'>
+                <h1>MERCH</h1>
+                <Image size='medium' src={require('../images/product3.jpg')} />
+              </div>
             </div>
-            <div className='picStyle'>
-              <h1>MERCH</h1>
-              <Image size='large' src={require('../images/Merch.png')} />
-            </div>
-          </div>
         </div>
       )
     }

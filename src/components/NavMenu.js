@@ -22,7 +22,7 @@ class NavMenu extends Component {
 
   render() {
     const { activeItem, width, visible } = this.state;
-    const isMobile = width <= 500;
+    const isMobile = width <= 600;
     if (!isMobile ){
     return (
       <div>
@@ -43,11 +43,6 @@ class NavMenu extends Component {
           <Link to="/HowToPlay">
             <div className='buttonpad'>
                 <h2>HOW TO PLAY</h2>
-            </div>
-          </Link>
-          <Link to='/CrowdFunding'>
-            <div className='buttonpad'>
-                <h2>CROWD FUNDING</h2>
             </div>
           </Link>
           <Link to='/MeetTheTeam'>
@@ -87,11 +82,6 @@ class NavMenu extends Component {
                 HOW TO PLAY
               </Menu.Item>
             </Link>
-              <Link to='/CrowdFunding'>
-                <Menu.Item name='services' active={activeItem === 'services'} onClick={this.handleClick}>
-                  CROWD FUNDING
-                </Menu.Item>
-              </Link>
               <Link to='/MeetTheTeam'>
                 <Menu.Item name='services' active={activeItem === 'services'} onClick={this.handleClick}>
                   MEET THE TEAM

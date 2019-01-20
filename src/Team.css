@@ -31,6 +31,17 @@
   margin-right: auto;
 }
 
+.bio3 {
+  height: 250px;
+  width: 250px;
+  background-image: url('./images/Danny.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .bio4 {
   height: 250px;
   width: 250px;
