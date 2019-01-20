@@ -52,7 +52,7 @@ class ContactUs extends React.Component {
           </div>
           <br />
             <div>
-              <a href="https://www.instagram.com/">
+              <a href="https://www.instagram.com/batellball/">
                 <Icon color='black' name='instagram' size='big' />
               </a>
             </div>
