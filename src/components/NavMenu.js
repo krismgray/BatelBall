@@ -30,13 +30,6 @@ class NavMenu extends Component {
       <div className="navbar">
           <Link to="/">
             <div className='buttonpad'>
-                <div className='logotext'>
-                  <Image size='large' src={require('../images/logowhite.png')} />
-                </div>
-            </div>
-          </Link>
-          <Link to="/">
-            <div className='buttonpad'>
               <h2>HOME</h2>
             </div>
           </Link>
