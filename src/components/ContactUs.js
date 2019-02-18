@@ -1,6 +1,7 @@
 import React from 'react';
 import NavMenu from './NavMenu';
 import { Button, Form, Input, TextArea, Container, Icon} from 'semantic-ui-react';
+import ContactForm from './ContactForm';
 import '../Contact.css';
 
 class ContactUs extends React.Component {
@@ -39,35 +40,7 @@ class ContactUs extends React.Component {
           <br />
           <br />
           <br />
-          <Container>
-            <div className='FormContact'>
-              <Form size='big'>
-                <Form.Group widths='equal'>
-                  <Form.Input fluid label='First name'
-                              placeholder='First Name'
-                              name="first"
-                              onChange={this.handleChange}
-                              />
-                  <Form.Input fluid label='Last name'
-                              placeholder='Last Name'
-                              name="last"
-                              onChange={this.handleChange}
-                              />
-                  <Form.Input fluid label='Email'
-                              placeholder='Email'
-                              name="email"
-                              onChange={this.handleChange}
-                              />
-                </Form.Group>
-                <Form.TextArea label='About'
-                              placeholder='What can we help you with today?'
-                              name="message"
-                              onChange={this.handleChange}
-                              />
-                <Form.Button onSubmit={this.handleSubmit}>Submit</Form.Button>
-              </Form>
-            </div>
-          </Container>
+          <ContactForm />
           <br />
           <div className='title'>
             <p>HAVE ANY QUESTIONS?</p>
