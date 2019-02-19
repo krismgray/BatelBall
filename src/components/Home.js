@@ -29,7 +29,6 @@ class Home extends React.Component {
     return (
       <div>
         <NavMenu />
-        <br />
         <div className='Body1'>
           <Image fluid src={require('../images/Header.jpg')} />
         </div>

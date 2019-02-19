@@ -6,10 +6,17 @@
 }
 
 .buttonpad {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   color: black;
+
+}
+
+.buttonpad:hover {
+  background-color: #d9d9d9;
 }
 
 .Body1 {

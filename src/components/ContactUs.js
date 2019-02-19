@@ -48,15 +48,15 @@ class ContactUs extends React.Component {
           <br />
           <div className='body'>
             <div>
-              <p>Reach out to us via email or social media. Click on the Links below to get in touch!</p>
-              <a href="mailto:info@batellball.com">
-                info@batellball.com
-              </a>
+              <p>Reach out to us with the email form above or through social media! Click on the one of the links below to get in touch!</p>
             </div>
             <br />
             <div>
               <a href="https://www.instagram.com/batellball/">
                 <Icon color='black' name='instagram' size='big' />
+              </a>
+              <a href="https://www.facebook.com/batellball/">
+                <Icon color='black' name='facebook' size='big' />
               </a>
             </div>
           </div>
