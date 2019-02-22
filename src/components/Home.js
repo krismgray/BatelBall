@@ -41,11 +41,7 @@ class Home extends React.Component {
           It is a whole new ball game!  Bring both hands, you will need them!
         </p>
         <br />
-        <div className='Body2'>
-          <p>If you haven't tried it, YES, it's as fun as it looks.
-            And while we admit to being biased, anything from a lazy day at the beach to a "let's keep score"
-          competitive session with friends (and arch enemies) is better with Batell Ball.</p>
-        </div>
+
         <br />
         <div className='Body3'>
           <div className='Body3back'>
@@ -71,13 +67,7 @@ class Home extends React.Component {
         </div>
         <br />
         <br />
-        <div className='Body5'>
-          <p>Only 2 players required and you can play anywhere: backyard, campground, beach, gym floor, you name it.
-            Once players get a feel for the Paddles (1 hour) solid rallies, backhands and celebratory high fives quickly follow.
-          </p>
-          <br />
-          <p>But that doesn't mean the game is easy to master. Some competitive players practive year round and compete in the Batell Ball League!</p>
-        </div>
+
         <br />
         <br />
         <div className='Body6'>
@@ -111,9 +101,7 @@ class Home extends React.Component {
           </p>
           <br />
           <div className='MobileBody2'>
-            <p>If you haven't tried it, YES, it's as fun as it looks.
-              And while we admit to being biased, anything from a lazy day at the beach to a "let's keep score"
-            competitive session with friends (and arch enemies) is better with Batell Ball.</p>
+
           </div>
           <br />
           <div className='MobileBody3'>
@@ -145,11 +133,8 @@ class Home extends React.Component {
           <br />
           <br />
           <div className='MobileBody5'>
-            <p>Only 2 players required and you can play anywhere: backyard, campground, beach, gym floor, you name it.
-              Once players get a feel for the Paddles (1 hour) solid rallies, backhands and celebratory high fives quickly follow.
-            </p>
+
             <br />
-            <p>But that doesn't mean the game is easy to master. Some competitive players practive year round and compete in the Batell Ball League!</p>
           </div>
           <br />
           <br />

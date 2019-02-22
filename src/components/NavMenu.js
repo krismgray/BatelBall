@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Menu, Image, Button, Icon, Sidebar, Divider } from 'semantic-ui-react';
+import { Header, Menu, Image, Button, Icon, Sidebar, Divider, Container } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import '../Home.css';
 
@@ -55,14 +55,11 @@ class NavMenu extends Component {
         <div>
           <div className='mobilemenu'>
             <div className='mobilemenu1'>
-            <Button size='big' icon onClick={this.toggleVisibility}><Icon name='content' size='large' /></Button>
-            <Link to='/'>
-              <Image size='medium' src={require('../images/logowhite.png')} />
-            </Link>
+              <Container>
+                <Button fluid size='big' icon onClick={this.toggleVisibility}>Menu<Icon name='content'  /></Button>
+              </Container>
             </div>
-            <br />
           </div>
-          <br />
             <Sidebar as={Menu} animation='overlay' visible={visible} direction='top' vertical inverted>
               <Button secondary onClick={this.toggleVisibility}><Icon name='remove' size='large' /></Button>
             <Link to="/">

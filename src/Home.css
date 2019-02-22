@@ -96,9 +96,11 @@
 .mobilemenu1 {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  padding-bottom: 10px;
 }
+
 
 .MobileBody2 {
   font-size: 18px;
