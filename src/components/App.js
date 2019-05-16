@@ -5,6 +5,7 @@ import HowToPlay from './HowToPlay';
 import MeetTheTeam from './MeetTheTeam';
 import ContactUs from './ContactUs';
 import CrowdFunding from './CrowdFunding';
+import Gallery from './Gallery';
 
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
           <Route path='/CrowdFunding' component={CrowdFunding} />
           <Route path='/ContactUs' component={ContactUs} />
           <Route path='/MeetTheTeam' component={MeetTheTeam} />
+          <Route path='/Gallery' component={Gallery} />
         </Switch>
       </div>
     );
