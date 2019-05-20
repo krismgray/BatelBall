@@ -59,10 +59,10 @@ class Gallery extends React.Component {
               <Grid>
                 <Row>
                   <Col xs="12" md="6">
-                    <iframe width="500" height="300" src="https://www.youtube.com/embed/U9t-slLl30E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8dIFwTbC__g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </Col>
                   <Col xs="12" md="6">
-                    <iframe width="500" height="300" src="https://www.youtube.com/embed/U9t-slLl30E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L2LkX0xbJGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </Col>
                 </Row>
               </Grid>
@@ -92,14 +92,14 @@ class Gallery extends React.Component {
               <Grid>
                 <Row>
                   <Col xs="12">
-                    <iframe width="380" height="200" src="https://www.youtube.com/embed/U9t-slLl30E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="380" height="200" src="https://www.youtube.com/embed/8dIFwTbC__g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </Col>
                   <Col xs="12">
                     <br />
                     <br />
                   </Col>
                   <Col xs="12">
-                    <iframe width="380" height="200" src="https://www.youtube.com/embed/U9t-slLl30E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="380" height="200" src="https://www.youtube.com/embed/L2LkX0xbJGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </Col>
                 </Row>
               </Grid>
