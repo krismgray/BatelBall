@@ -38,6 +38,11 @@ class NavMenu extends Component {
                 <h2>HOW TO PLAY</h2>
             </div>
           </Link>
+          <Link to="/Gallery">
+            <div className='buttonpad'>
+                <h2>GALLERY</h2>
+            </div>
+          </Link>
           <Link to='/MeetTheTeam'>
             <div className='buttonpad'>
                 <h2>MEET THE TEAM</h2>

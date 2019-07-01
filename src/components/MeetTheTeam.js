@@ -68,6 +68,18 @@ class MeetTheTeam extends React.Component {
               <Col xs={16} md={6}>
                 <div className='bio4'>
                 </div>
+                <h3>Felix</h3>
+                <p>Multi Media Specialist</p>
+              </Col>
+            </Row>
+              <br />
+              <br />
+              <br />
+              <br />
+            <Row>
+              <Col xs={16} md={6}>
+                <div className='bio5'>
+                </div>
                 <h3>Kris Gray</h3>
                 <p>Web Design</p>
               </Col>

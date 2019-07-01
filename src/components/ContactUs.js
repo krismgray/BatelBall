@@ -32,35 +32,44 @@ class ContactUs extends React.Component {
   }
 
   render() {
-    const { first, last, email, message, value } = this.state;
     return(
       <div>
         <NavMenu />
-        <div className='backcolor'>
-          <br />
-          <br />
-          <br />
-          <ContactForm />
-          <br />
-          <div className='title'>
-            <p>HAVE ANY QUESTIONS?</p>
-          </div>
-          <br />
-          <div className='body'>
-            <div>
-              <p>Reach out to us with the email form above or through social media! Click on the one of the links below to get in touch!</p>
+        <Container>
+          <form action="mailto:kris.m.gray@gmail.com" method="post">
+            <div className='contactUsForm'>
+              <div className='formEntry'>
+                <label for="first_name">First Name *</label>
+                <br />
+                <input  type="text" name="first_name" maxlength="50" size="100"/>
+              </div>
+              <div className='formEntry'>
+                <label for="last_name">Last Name *</label>
+                <br />
+                <input  type="text" name="last_name" maxlength="50" size="100"/>
+              </div>
+              <div className='formEntry'>
+                <label for="email">Email Address *</label>
+                <br />
+                <input  type="text" name="email" maxlength="80" size="100"/>
+              </div>
+              <div className='formEntry'>
+                <label for="telephone">Telephone Number</label>
+                <br />
+                <input  type="text" name="telephone" maxlength="30" size="100"/>
+              </div>
+              <br />
+              <div className='formEntryEnd'>
+                <label for="comments">Comments *</label>
+                <br />
+                <textarea  name="comments" maxlength="1000" cols="50" rows="8" size="100"></textarea>
+              </div>
+              <div className='formEntryEnd'>
+                <input type="submit" value="Submit" size="100"/>
+              </div>
             </div>
-            <br />
-            <div>
-              <a href="https://www.instagram.com/batellball/">
-                <Icon color='black' name='instagram' size='big' />
-              </a>
-              <a href="https://www.facebook.com/batellball/">
-                <Icon color='black' name='facebook' size='big' />
-              </a>
-            </div>
-          </div>
-        </div>
+          </form>
+        </Container>
       </div>
     )
   }

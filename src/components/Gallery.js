@@ -37,6 +37,10 @@ class Gallery extends React.Component {
       {
         original: require('../images/IMG4.jpeg'),
         thumbnail: require('../images/IMG4.jpeg')
+      },
+      {
+        original: 'https://www.instagram.com/p/BtboAYShC44/',
+        thumbnail: 'https://www.instagram.com/p/BtboAYShC44/'
       }
     ]
     const { activeItem, width, visible } = this.state;
