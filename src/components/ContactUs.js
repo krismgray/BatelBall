@@ -64,8 +64,9 @@ class ContactUs extends React.Component {
                 <br />
                 <textarea  name="comments" maxlength="1000" cols="50" rows="8" size="100"></textarea>
               </div>
-              <div className='formEntryEnd'>
-                <input type="submit" value="Submit" size="100"/>
+              <br />
+              <div className='formEntryButton'>
+                <input type="submit" value="Submit" />
               </div>
             </div>
           </form>
